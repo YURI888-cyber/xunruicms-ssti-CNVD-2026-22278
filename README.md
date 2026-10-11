@@ -83,12 +83,12 @@ markdown
 
 **环境准备**
 
-```bash
 python3 -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install requests
 python poc.py <目标URL>
-六、修复建议
+
+## 六、修复建议
 临时缓解
 限制后台上传文件类型，禁止 .html / .php 等可解析后缀上传；
 对模板目录设置不可写/不可执行权限，关闭模板在线编辑入口；
@@ -97,7 +97,8 @@ python poc.py <目标URL>
 移除模板引擎中的 eval() 执行路径，改用白名单式标签解析器；
 对所有模板变量执行严格的输出编码与上下文隔离；
 引入沙箱机制，禁用 system、exec、passthru、shell_exec 等危险函数。
-七、免责声明
+
+## 七、免责声明
 本项目仅用于网络安全研究与教学，所有测试均在本人授权的本地环境中完成。
 使用者须遵守《中华人民共和国网络安全法》《数据安全法》等相关法律法规，
 严禁将本项目代码用于任何未授权的系统或生产环境。因不当使用产生的一切后果由使用者自行承担，本项目作者不承担任何责任。
