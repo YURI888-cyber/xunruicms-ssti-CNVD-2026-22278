@@ -1,4 +1,4 @@
-**# XunRuiCMS SSTI 远程代码执行漏洞 PoC
+# **XunRuiCMS SSTI 远程代码执行漏洞 PoC**
 > CNVD‑2026‑22278 | 迅睿CMS（XunRuiCMS）服务端模板注入 / PHP代码执行漏洞
 
 ## 一、项目说明
